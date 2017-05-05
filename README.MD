@@ -1,9 +1,9 @@
 # EzCondor
-## Abstract
+## Intro
 - convenient utilities
-- workflow management
+- workflow verification
 ## Content
-### Modules
+### 1. Modules
 #### ExtractMacros.py
  a class for extracting macros and their values in a submit file  
 
@@ -36,10 +36,10 @@ class ModifyNode:
     def change_to_noop(self):
         # change a Dag node to noop
     def reverse_noop(self):
-       #  reverse a noop nodes to  a Dag node to normal status.
+        # reverse a noop nodes to  a Dag node to normal status.
 ```
 #### Utilities.py :  
-class Utilities： a class for warp the basic submit and monitor function of HTCondor, and add more available methods submit job via classAD.
+class Utilities： a class for warp basic submit and monitor functions of HTCondor, and add more available methods like submit job/DAG via classAD.
 ```python
 class Utilities:
  
@@ -69,9 +69,9 @@ class Utilities:
        #monitor job finishing time
 ```
 
-### Tools
+### 2. Tools
 #### dag2dataflow.py: 
-A tool which reads a dag description file(*.dag) and outputs a dataflow result.
+A tool which reads a DAG description file(*.dag) and outputs a dataflow result.
 
 ```python
 # dag file example:
