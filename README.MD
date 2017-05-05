@@ -1,6 +1,7 @@
 # EzCondor
 ## Abstract
-workflow manager
+- convenient utilities
+- workflow management
 ## Content
 ### Modules
 #### ExtractMacros.py
@@ -36,6 +37,36 @@ class ModifyNode:
         # change a Dag node to noop
     def reverse_noop(self):
        #  reverse a noop nodes to  a Dag node to normal status.
+```
+#### Utilities.py :  
+class Utilities： a class for warp the basic submit and monitor function of HTCondor, and add more available methods submit job via classAD.
+```python
+class Utilities:
+ 
+    def __init__(self,subfile = None):
+        self.subfile = subfile
+        self.subad = None
+        if subfile != None:
+            self.jobname = subfile.split(".")[0]
+    def submit_subfile(self,subfile = None):
+        '''
+        submit a job via *.sub file
+        :param 
+        :return: stdout
+        '''
+    def submit_ondemand(self,jobname, **kwargs):
+        '''
+        This function will form a ClassAd and Submit job vid input argument, you must provide necessary argument for ClassAd
+        :param
+        :return: None
+        '''
+
+    def submit_file2AD(self,subfile = None):
+	#convert a submit file to ClassAd form and then submit
+    def submit_DAG2AD(self, dagfile):
+	#convert a DAG submit file to ClassAd form and then submit
+    def monitor_job(self):
+       #monitor job finishing time
 ```
 
 ### Tools
