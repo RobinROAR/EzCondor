@@ -4,6 +4,7 @@ import Image
 import time
 import dask
 import numpy as np
+import distributed
 
 # 通过原始定义的方法，对图像计算卷积，返回一个图像矩阵。
 # calculate the convolution by brute force, return a image matrix.
@@ -65,4 +66,5 @@ def calCov(tem,img):
             b += 1
     et = time.time()
     print 'Cal time:', str(et - st)
-    return result
+    work = distributed.get_worker()
+    return [result,str(et - st),work.address]
