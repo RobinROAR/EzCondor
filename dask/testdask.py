@@ -63,8 +63,8 @@ def main(_):
 if __name__ == '__main__':
 
     parser = argparse.ArgumentParser(usage='./testdask.py --help')
-    parser.add_argument('queue', type=int, default=1, help='the subtask you want')
-    parser.add_argument('address', type=str, default='127.0.0.1:8786', help='scheduler address')
+    parser.add_argument('queue', type=int, nargs='?', default=1, help='the subtask you want')
+    parser.add_argument('address', type=str, nargs='?', default='127.0.0.1:8786', help='scheduler address')
     args = parser.parse_args()
     main(None)
 
