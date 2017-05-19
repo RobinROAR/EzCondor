@@ -1,6 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-import Image
+try:
+    import Image
+except ImportError:
+    from PIL import Image
 import time
 import dask
 import numpy as np
