@@ -3,6 +3,7 @@
 
 import calcov
 import os
+import shutil
 try:
     import Image
 except ImportError:
@@ -46,10 +47,8 @@ def main(_):
     future = client.map(calcov.calCov, B, D)
     result = [[np.array(_[0]),str(_[1]),str(_[2])] for _ in client.gather(future)]
 
-    if os.path.exists(r'./data'):
-        os.rmdir(r'./data')
-    else:
-        os.mkdir(r'./data')
+    shutil.rmtree(r'./data', ignore_errors=True)
+    os.mkdir(r'./data')
     i = 0
     for _ in result:
         data=_[0]
