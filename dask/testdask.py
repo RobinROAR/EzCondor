@@ -3,7 +3,10 @@
 
 import calcov
 import os
-import Image
+try:
+    import Image
+except ImportError:
+    from PIL import Image
 import numpy as np
 from distributed import Client
 import distributed
