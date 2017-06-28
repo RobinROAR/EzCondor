@@ -1,31 +1,52 @@
 #!/usr/bin/env python
 # -*-coding:utf-8 -*-
-##RoBinZ @ chtc.wisc.edu
+##Robin.Z @ chtc.wisc.edu
 #06.27 2017
+#revised in July 14, 2017
 #The Script class.
-#Processing done before a job is submitted to HTCondor or Stork is called a PRE script. Processing done after a job completes its execution under HTCondor or Stork is called a POST script. A node in the DAG is comprised of the job together with PRE and/or POST scripts.
+import os
+
+class Script(object):
+    #define a Script class,a Script is belonging to a job
+    def __init__(self,name,job,position,argu = ''):
+        self._job = job
+        self._position = position
+        self._name = name
+        self._argu = argu
+
+    @property
+    def job(self):
+        return self._job
+    @job.setter
+    def job(self,job):
+        if job == None:
+            raise ValueError('a script must have a job to belong !')
+        else:
+            self._job = job
 
 
-class Script:
-    #define a Script class
-    def __init__(self,script, pre = [], post = [], argu= ''):
-        '''
+    @property
+    def position(self):
+        return self._position
 
-        :param scritps:  the executable script
-        :param pre:  a list of the names of parents nodes,[A,B]
-        :param post: a list of the names of parents nodes,[A,B]
-        :param arg:  the argument of scripts
-        '''
+    @position.setter
+    def position(self, position):
+        if position == None or position not in ('PRE','pre','Pre','post','Post' 'POST'):
+            raise ValueError('The position must be ’PRE‘ or ’POST‘ !')
+        else:
+            self._position = position
 
-        self.script = script
-        self.pre = pre
-        self.post = post
-        self.argu = argu
-    def set_pre(self,pre):
-        self.pre.extend(pre)
+    @property
+    def path(self):
+        if os.path.exists(self._name):
+            return os.path.abspath(self._name)
+        else:
+            raise ValueError('The script is not existing !')
 
-    def set_post(self,post):
-        self.post.extend(post)
 
-    def set_argu(self,argu):
-        self.argu = argu
+    @property
+    def argu(self):
+        return self._argu
+    @argu.setter
+    def argu(self,argu):
+        self._argu = argu

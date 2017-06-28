@@ -3,7 +3,7 @@
 #RoBinZ @ chtc.wisc.edu
 #06.27 2017
 #The Edge class, The directed edges connect different nodes.
-class Edge:
+class Edge(object):
     #define a Edge class, a edge must have parent and child
     def __init__(self,parents, children):
         '''

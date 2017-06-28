@@ -1,0 +1,7 @@
+should_transfer_files  =  YES
+Executable  =  a.sh
+Log  =  job1.log
+Universe  =  standard
+Arguments  =  in1 in2 out1
+when_to_transfer_output  =  ON_EXIT
+Queue   3

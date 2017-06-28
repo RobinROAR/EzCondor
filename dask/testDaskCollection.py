@@ -25,7 +25,7 @@ def cal(x,client):
         B = da.dot(x,A)
         C = da.dot(B,B)
 
-        print C.compute(num_works=1)
+        print C.compute()
 
     #Default scheduler
     # with dask.set_options(get=dask.threaded.get):
@@ -55,19 +55,11 @@ def main():
     #print np.array(Image.open(r'dota2.jpg')).shape
 
     #data = da.from_array(np.array(Image.open(r'dota2.jpg')), chunks=(40,60,3))
-    data = da.from_array(np.ones((800,600)), chunks=(80,60))
+    data = da.from_array(np.ones((800,600)), chunks=(800,600))
 
     client = Client('127.0.0.1:8786')
     #client = 0
     cal(data,client)
-
-
-
-
-
-
-
-
 
 
 

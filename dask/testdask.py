@@ -3,14 +3,16 @@
 
 import calcov
 import os
-from PIL import Image
+import shutil
+try:
+    import Image
+except ImportError:
+    from PIL import Image
 import numpy as np
 from distributed import Client
 import distributed
 import dask.array as da
 import argparse
-import shutil
-
 
 
 # def cal(x):
@@ -45,11 +47,8 @@ def main(_):
     future = client.map(calcov.calCov, B, D)
     result = [[np.array(_[0]),str(_[1]),str(_[2])] for _ in client.gather(future)]
 
-    if os.path.exists(r'./data'):
-        shutil.rmtree(r'./data')
-        os.mkdir(r'./data')
-    else:
-        os.mkdir(r'./data')
+    shutil.rmtree(r'./data', ignore_errors=True)
+    os.mkdir(r'./data')
     i = 0
     for _ in result:
         data=_[0]
@@ -63,8 +62,8 @@ def main(_):
 if __name__ == '__main__':
 
     parser = argparse.ArgumentParser(usage='./testdask.py --help')
-    parser.add_argument('queue', type=int, default=1, help='the subtask you want')
-    parser.add_argument('address', type=str, default='127.0.0.1:8786', help='scheduler address')
+    parser.add_argument('queue', type=int, nargs='?', default=1, help='the subtask you want')
+    parser.add_argument('address', type=str, nargs='?', default='127.0.0.1:8786', help='scheduler address')
     args = parser.parse_args()
     main(None)
 
