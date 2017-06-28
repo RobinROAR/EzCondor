@@ -3,12 +3,14 @@
 
 import calcov
 import os
-import Image
+from PIL import Image
 import numpy as np
 from distributed import Client
 import distributed
 import dask.array as da
 import argparse
+import shutil
+
 
 
 # def cal(x):
@@ -44,7 +46,8 @@ def main(_):
     result = [[np.array(_[0]),str(_[1]),str(_[2])] for _ in client.gather(future)]
 
     if os.path.exists(r'./data'):
-        os.rmdir(r'./data')
+        shutil.rmtree(r'./data')
+        os.mkdir(r'./data')
     else:
         os.mkdir(r'./data')
     i = 0

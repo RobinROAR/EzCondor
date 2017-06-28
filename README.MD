@@ -1,7 +1,9 @@
 # EzCondor
 ## Intro
-- convenient utilities
-- workflow verification
+- Convenient utilities
+- Workflow verification
+- Dask support
+- DAG Python API
 ## Content
 ### 1. Modules
 #### ExtractMacros.py

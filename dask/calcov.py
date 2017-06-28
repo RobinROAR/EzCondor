@@ -10,6 +10,7 @@ import distributed
 # calculate the convolution by brute force, return a image matrix.
 def getTemSize(temp):
     wid = temp.shape[0]
+    print '++++++++++++++++++++++++++++++++'
     print "COV template:"
     print temp
     print 'Template size:', wid, '*', wid
