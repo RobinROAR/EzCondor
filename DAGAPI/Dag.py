@@ -14,11 +14,11 @@ import os
 
 class DAG(object):
     #define a DAG class
-    def __init__(self,name = 'new_dag', nodes = [],edges = []):
+    def __init__(self,name = 'new_dag'):
         self._name = name
         self._author = 'anomymous'
-        self._nodes = nodes
-        self._edges = edges
+        self._nodes = []
+        self._edges = []
 
     @property
     def name(self):
