@@ -2,7 +2,33 @@
 ## Mannul
 
 This API is provided for helping HTCondor-unfamiliar people to create a DAG file and its affiliated *.sub files in pure python program.
+### API
+```python
+class DAG:
+     _name
+     Nodes
+     Edges
 
+class Node:
+    _name
+    Job
+    Scripts
+
+class Edge:
+    _parents
+    _children
+
+class Job:
+    _name
+    _executable
+    -argument
+
+class Script:
+    _name
+    _job
+    _position
+
+```
 ### A small example
 
 - First
@@ -47,31 +73,5 @@ for _ in [e1,e2]:
 dag.write2file('./')
 
 ```
-### API
-```python
-class DAG:
-     _name
-     Nodes
-     Edges
 
-class Node:
-    _name
-    Job
-    Scripts
-
-class Edge:
-    _parents
-    _children
-
-class Job:
-    _name
-    _executable
-    -argument
-
-class Script:
-    _name
-    _job
-    _position
-
-```
 
