@@ -48,40 +48,30 @@ dag.write2file('./')
 
 ```
 ### API
+```python
+class DAG:
+     _name
+     Nodes
+     Edges
 
-- class Job
-    - a job, intitilized with a name, exe, and argument(select)
-    - attributes:
-        - name
-        - exe
-        - argu
-        - path
+class Node:
+    _name
+    Job
+    Scripts
 
-- Script
-    - __init__(name,job,position,argu = None)
-    - attributes:
-        - name
-        - job
-        - position
-        - path: read_only
-        - argu
+class Edge:
+    _parents
+    _children
 
-- Node
-    - __init__(self,name,job = None, scripts=[]):
-    - attributes:
-        - name:  the name of node
-        - job: a job object
-        - scripts: a list of script object
-- DAG:
-    -  __init__(self,name = 'new_dag', nodes = [],edges = []):
-    - attributes:
+class Job:
+    _name
+    _executable
+    -argument
 
+class Script:
+    _name
+    _job
+    _position
 
+```
 
-# rules:
-- Dag:
-    - add_node(): check a node must have all necessary element
-    - add_edges(): the related nodes must in dag.nodes
-
-- Script:
-    a script must exist
