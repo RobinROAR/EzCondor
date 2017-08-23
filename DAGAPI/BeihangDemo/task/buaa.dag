@@ -1,0 +1,19 @@
+JOB node_1 node_1.sub
+JOB node_2 node_2.sub
+JOB node_3 node_3.sub
+JOB node_4 node_4.sub
+JOB node_5 node_5.sub
+SCRIPT PRE node_4 pre.py node_4.sub
+SCRIPT PRE node_1 pre.py node_1.sub
+SCRIPT POST node_5 post.py node_5.sub
+SCRIPT POST node_4 post.py node_4.sub
+SCRIPT POST node_3 post.py node_3.sub
+SCRIPT PRE node_5 pre.py node_5.sub
+SCRIPT PRE node_2 pre.py node_2.sub
+SCRIPT POST node_1 post.py node_1.sub
+SCRIPT POST node_2 post.py node_2.sub
+SCRIPT PRE node_3 pre.py node_3.sub
+PARENT node_1 CHILD node_2
+PARENT node_2 CHILD node_3
+PARENT node_3 CHILD node_4
+PARENT node_4 CHILD node_5

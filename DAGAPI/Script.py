@@ -8,11 +8,12 @@ import os
 
 class Script(object):
     #define a Script class,a Script is belonging to a job
-    def __init__(self,name,job,position,argu = ''):
+    def __init__(self,name,job,position,argu = '',all = 0):
         self._job = job
         self._position = position
         self._name = name
         self._argu = argu
+        self._all = all
 
     @property
     def job(self):
@@ -37,11 +38,13 @@ class Script(object):
             self._position = position
 
     @property
+    # def path(self):
+    #     if os.path.exists(self._name):
+    #         return os.path.abspath(self._name)
+    #     else:
+    #         raise ValueError('The script is not existing !')
     def path(self):
-        if os.path.exists(self._name):
-            return os.path.abspath(self._name)
-        else:
-            raise ValueError('The script is not existing !')
+        return self._name
 
 
     @property
