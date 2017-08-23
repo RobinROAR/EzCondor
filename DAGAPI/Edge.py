@@ -8,8 +8,8 @@ class Edge(object):
     def __init__(self,parents, children):
         '''
 
-        :param parents: a list of the names of parents nodes,[A,B]
-        :param children: a list of the names of children nodes,[A,B]
+        :param parents: a list of the **Node.name** of parents nodes,['A','B']
+        :param children: a list of the **Node.name** of children nodes,['A']
         '''
         self.parents = parents
         self.children = children

@@ -7,7 +7,7 @@
 import os
 
 class Job(object):
-    def __init__(self,name,exe,argu = None):
+    def __init__(self,exe,name='Default',argu = None):
         self._name = name
         self._exe= exe
         self._argu = argu
@@ -16,8 +16,14 @@ class Job(object):
 
     @property
     def path(self):
-        return './'+self._name+'.sub'
+        return './'+str(self._name)
 
+    @property
+    def realpath(self):
+        if os.path.exists(self._name):
+            return os.path.abspath(self._name)
+        else:
+            raise ValueError('The script is not existing !')
 
     def create_file(self):
         #create the basic content for condor job description file
@@ -26,7 +32,7 @@ class Job(object):
         # Universe = standard
         # Log = foo.log
         # Queue
-        self._dict = {'Executable': self._exe, 'Universe':'standard','Log' :self._name+'.log', 'Queue':0}
+        self._dict = {'Executable': self._exe, 'Universe':'vanilla','Log' :'log', 'Queue':0}
         self.write()
 
     def translate(self):

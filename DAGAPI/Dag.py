@@ -82,7 +82,7 @@ class DAG(object):
         cnt = 0
         for _ in self.nodes:
             if _.job != None:
-                strr = 'JOB '+str(_.name)+' '+ _.job.path+'\n'
+                strr = 'JOB '+str(_.name)+' '+ _.job.realpath+'\n'
                 result.append(strr)
                 cnt+=1
         print 'prepare to write {0} nodes'.format(cnt)
@@ -96,14 +96,24 @@ class DAG(object):
         for _ in self._nodes:
             if len(_.scripts) != 0:
                 for i in _.scripts:
-                    # distinguish pre or post
-                    if i.position in ['PRE','pre','Pre']:
-                        strr = 'SCRIPT PRE ' + ' '.join(_.name) + ' ' + i.path + ' ' + i.argu + '\n'
+                    # allnodes case
+                    if i._all == 1:
+                        if i.position in ['PRE', 'pre', 'Pre']:
+                            strr = 'SCRIPT PRE ' + 'ALL_NODES' + ' ' + i.path + ' ' + i.argu + '\n'
+                        else:
+                            strr = 'SCRIPT POST ' + 'ALL_NODES' + ' ' + i.path + ' ' + i.argu + '\n'
+                        result.append(strr)
                     else:
-                        strr = 'SCRIPT POST ' + ' '.join(_.name) + ' ' + i.path + ' ' + i.argu + '\n'
+                    # distinguish pre or post
+                        if i.position in ['PRE','pre','Pre']:
+                            strr = 'SCRIPT PRE ' + ' '.join(_.name) + ' ' + i.path + ' ' + i.argu + '\n'
+                        else:
+                            strr = 'SCRIPT POST ' + ' '.join(_.name) + ' ' + i.path + ' ' + i.argu + '\n'
 
-                    result.append(strr)
+                        result.append(strr)
                     cnt += 1
+        #eliminate repeated lines
+        result = list(set(result))
         print 'prepare to write {0} scripts'.format(cnt)
         return result
 
@@ -122,13 +132,13 @@ class DAG(object):
 
     def write2file(self,tdir):
         strr = tdir
-        strr+= str(self.name)
+        strr+= str(self._name)
         with open(strr,"w+") as file:
             nodes = self.write_nodes()
             scripts = self.write_scripts()
             edges = self.write_edges()
             file.writelines(nodes+scripts+edges)
-        print 'Dag file: {}  is written. '.format(self.name)
+        print 'Dag file: {0}  is written. '.format(str(self._name))
 
 
 

@@ -1,0 +1,11 @@
+JOB compute1 /home/robin/GitProject/EzCondor/DAGAPI/BeihangDemo/compute
+JOB compute2 /home/robin/GitProject/EzCondor/DAGAPI/BeihangDemo/compute
+JOB compute3 /home/robin/GitProject/EzCondor/DAGAPI/BeihangDemo/compute
+JOB compute4 /home/robin/GitProject/EzCondor/DAGAPI/BeihangDemo/compute
+JOB compute5 /home/robin/GitProject/EzCondor/DAGAPI/BeihangDemo/compute
+SCRIPT PRE  allnodes /home/robin/GitProject/EzCondor/DAGAPI/BeihangDemo/pre.py 
+SCRIPT POST  allnodes /home/robin/GitProject/EzCondor/DAGAPI/BeihangDemo/post.py 
+PARENT compute1 CHILD compute2
+PARENT compute2 CHILD compute3
+PARENT compute3 CHILD compute4
+PARENT compute4 CHILD compute5

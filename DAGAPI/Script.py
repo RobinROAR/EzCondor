@@ -8,11 +8,12 @@ import os
 
 class Script(object):
     #define a Script class,a Script is belonging to a job
-    def __init__(self,name,job,position,argu = ''):
+    def __init__(self,name,job,position,argu = '',all = 0):
         self._job = job
         self._position = position
         self._name = name
         self._argu = argu
+        self._all = all
 
     @property
     def job(self):
