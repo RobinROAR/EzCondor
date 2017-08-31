@@ -1,0 +1,8 @@
+should_transfer_files  =  YES
+Executable  =  ./task/function.sh
+transfer_input_files  =  ./data
+Log  =  compute.log
+Universe  =  standard
+transfer_output_files  =  ./data
+when_to_transfer_output  =  ON_EXIT
+Queue  

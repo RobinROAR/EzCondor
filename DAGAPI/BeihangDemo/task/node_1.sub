@@ -1,0 +1,11 @@
+should_transfer_files  =  YES
+Executable  =  ./function.sh
+transfer_input_files  =  input_data_1
+Log  =  ./log/node_1.log
+when_to_transfer_output  =  ON_EXIT
+Universe  =  vanilla
+transfer_output_files  =  input_data_2
+Arguments  =  input_data_1 input_data_2
+error  =  ./log/node_1.error
+output  =  ./log/node_1.out
+Queue  

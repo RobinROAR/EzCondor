@@ -1,0 +1,4 @@
+Universe  =  standard
+Executable  =  job1
+Log  =  a.sh.log
+Queue  

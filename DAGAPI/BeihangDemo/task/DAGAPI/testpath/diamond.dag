@@ -1,0 +1,10 @@
+JOB A ./job1.sub
+JOB B ./job1.sub
+JOB C ./job2.sub
+JOB D ./job2.sub
+SCRIPT PRE A /home/robin/GitProject/EzCondor/DAGAPI/testpath/a.sh 
+SCRIPT POST A /home/robin/GitProject/EzCondor/DAGAPI/testpath/a.sh $JOB .gz
+SCRIPT POST B /home/robin/GitProject/EzCondor/DAGAPI/testpath/a.sh $JOB .gz
+SCRIPT PRE C /home/robin/GitProject/EzCondor/DAGAPI/testpath/a.sh 
+PARENT A D CHILD B C
+PARENT A CHILD B

@@ -1,0 +1,7 @@
+should_transfer_files  =  No
+Executable  =  a.sh
+Log  =  job2.log
+Universe  =  standard
+Arguments  =  usa
+when_to_transfer_output  =  all_time
+Queue  
