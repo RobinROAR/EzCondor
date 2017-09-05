@@ -69,7 +69,7 @@ class ExtractMacros:
         if self.filename == None:
         #if args == None:
             print 'Can\'t find the target file! Please check again.'
-            return 1
+            return None
         #a list storing  result
         #intialize queue
         queue = 0

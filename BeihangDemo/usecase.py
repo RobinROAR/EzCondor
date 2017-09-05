@@ -42,8 +42,8 @@ def build_dag(maxnum):
     #for node,sub,input,output,stdout,error in zip(nodes,submitfiles,inputs,outputs,stdouts,errors):
         job_dict[nodes[i]] = Job(name = submitfiles[i],exe = './function.sh',path = './task/')
         job_dict[nodes[i]].add_commands(should_transfer_files='YES', when_to_transfer_output='ON_EXIT',
-                                     transfer_input_files = inputs[i], transfer_output_files=inputs[i+1], output ='./log/'+stdouts[i],
-                                    error = './log/'+errors[i],Log = './log/'+nodes[i]+'.log', Arguments = inputs[i]+' '+inputs[i+1])
+                                     transfer_input_files = inputs[i], transfer_output_files=inputs[i+1], output ='log/'+stdouts[i],
+                                    error = 'log/'+errors[i],Log = 'log/'+nodes[i]+'.log', Arguments = inputs[i]+' '+inputs[i+1])
 
 
     #Generate Nodes

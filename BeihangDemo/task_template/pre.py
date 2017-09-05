@@ -10,15 +10,16 @@ from DAGAPI.ExtractMacros import ExtractMacros
 from DAGAPI.ModifyNode import ModifyNode
 import argparse
 
+
 Flags = None
 
 def main():
-    # if this is the first node
+    # if this is the first node, create the loopfile to record some necessary values.
     if os.path.exists('loopfile'):
         pass
     else:
         #initialize
-        temp = {'currentY': 0}
+        temp = {'currentY': 0, 'yhistory':[],'nloops':0, 'mems':0}
         with open(r'loopfile','w+') as f:
             cPickle.dump(temp,f)
             print 'create loopfile'
