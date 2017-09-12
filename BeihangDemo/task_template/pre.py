@@ -9,7 +9,7 @@ import cPickle
 from DAGAPI.ExtractMacros import ExtractMacros
 from DAGAPI.ModifyNode import ModifyNode
 import argparse
-
+import time
 
 Flags = None
 
@@ -36,6 +36,7 @@ def main():
             print "change to noop"
         else:
             print 'no change'
+
     else:
         print 'No target submit file!'
 

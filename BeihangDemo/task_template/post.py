@@ -10,6 +10,7 @@ from DAGAPI.ExtractMacros import ExtractMacros
 from DAGAPI.ModifyNode import ModifyNode
 import argparse
 import htcondor
+import time
 
 Flags = None
 
@@ -66,7 +67,8 @@ def main():
     else:
         print 'before is a noop job'
 
-
+    #for a but
+    time.sleep(21)
 
 p = argparse.ArgumentParser()
 p.add_argument('submit')

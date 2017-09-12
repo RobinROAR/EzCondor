@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b81c191-a65e-44fa-9f8c-e1833d8bdd26" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/BeihangDemo/post.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/BeihangDemo/pre.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DAGAPI/BeihangDemo/DAGAPI/ExtractMacros.py" afterPath="$PROJECT_DIR$/DAGAPI/BeihangDemo/DAGAPI/ExtractMacros.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DAGAPI/BeihangDemo/task_template/post.py" afterPath="$PROJECT_DIR$/DAGAPI/BeihangDemo/task_template/post.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DAGAPI/BeihangDemo/task_template/pre.py" afterPath="$PROJECT_DIR$/DAGAPI/BeihangDemo/task_template/pre.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DAGAPI/BeihangDemo/usecase.py" afterPath="$PROJECT_DIR$/DAGAPI/BeihangDemo/usecase.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demofiles/test.py" afterPath="$PROJECT_DIR$/demofiles/test.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BeihangDemo/DAGAPI/ModifyNode.py" afterPath="$PROJECT_DIR$/BeihangDemo/DAGAPI/ModifyNode.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BeihangDemo/task_template/post.py" afterPath="$PROJECT_DIR$/BeihangDemo/task_template/post.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BeihangDemo/task_template/pre.py" afterPath="$PROJECT_DIR$/BeihangDemo/task_template/pre.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DAGAPI/README.MD" afterPath="$PROJECT_DIR$/DAGAPI/README.MD" />
     </list>
     <ignored path="HTCondorPython.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,43 +29,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="usecase.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/DAGAPI/BeihangDemo/usecase.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="45" column="14" selection-start-line="45" selection-start-column="14" selection-end-line="45" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="node_1.sub" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DAGAPI/BeihangDemo/task/node_1.sub">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="3" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="post.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DAGAPI/BeihangDemo/task_template/post.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="990">
-              <caret line="66" column="35" selection-start-line="66" selection-start-column="35" selection-end-line="66" selection-end-column="35" />
-              <folding>
-                <element signature="e#93#103#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Utilities.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Utilities.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2595">
-              <caret line="173" column="30" selection-start-line="173" selection-start-column="30" selection-end-line="173" selection-end-column="50" />
+            <state relative-caret-position="2220">
+              <caret line="154" column="24" selection-start-line="154" selection-start-column="24" selection-end-line="154" selection-end-column="24" />
               <folding>
                 <element signature="e#157#172#0" expanded="true" />
               </folding>
@@ -72,31 +41,35 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="post.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BeihangDemo/task_template/post.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+              <folding>
+                <element signature="e#93#103#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="pre.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DAGAPI/BeihangDemo/task_template/pre.py">
+        <entry file="file://$PROJECT_DIR$/BeihangDemo/task_template/pre.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="21" column="55" selection-start-line="21" selection-start-column="55" selection-end-line="21" selection-end-column="55" />
-              <folding />
+            <state relative-caret-position="270">
+              <caret line="24" column="35" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
+              <folding>
+                <element signature="e#91#101#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Dag.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DAGAPI/BeihangDemo/DAGAPI/Dag.py">
+      <file leaf-file-name="usecase.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/BeihangDemo/usecase.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1245">
-              <caret line="87" column="58" selection-start-line="87" selection-start-column="58" selection-end-line="87" selection-end-column="58" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Script.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DAGAPI/BeihangDemo/DAGAPI/Script.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -168,12 +141,15 @@
         <option value="$PROJECT_DIR$/DAGAPI/BeihangDemo/DAGAPI/ExtractMacros.py" />
         <option value="$PROJECT_DIR$/DAGAPI/BeihangDemo/task_template/post.py" />
         <option value="$PROJECT_DIR$/DAGAPI/BeihangDemo/usecase.py" />
+        <option value="$PROJECT_DIR$/BeihangDemo/task_template/pre.py" />
+        <option value="$PROJECT_DIR$/BeihangDemo/task_template/post.py" />
+        <option value="$PROJECT_DIR$/BeihangDemo/DAGAPI/ModifyNode.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="143" />
-    <option name="y" value="55" />
+    <option name="x" value="80" />
+    <option name="y" value="43" />
     <option name="width" value="1223" />
     <option name="height" value="669" />
   </component>
@@ -202,7 +178,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -231,7 +206,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="demofiles" />
+              <option name="myItemId" value="DAGAPI" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -245,19 +220,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="DAGAPI" />
+              <option name="myItemId" value="BeihangDemo" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="configurable.group.build" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../TensorflowTutorialsCode" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -573,7 +549,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="143" y="55" width="1223" height="669" extended-state="0" />
+    <frame x="80" y="43" width="1223" height="669" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2792793" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -647,37 +623,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/dask/calcov.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="65" column="22" selection-start-line="65" selection-start-column="22" selection-end-line="65" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dask/testDaskCollection.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="565">
-          <caret line="40" column="29" selection-start-line="40" selection-start-column="29" selection-end-line="40" selection-end-column="29" />
-          <folding>
-            <element signature="e#47#60#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DAGAPI/testpath/job1.sub">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DAGAPI/testpath/job2.sub">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DAGAPI/testpath/a.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -692,19 +637,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tools/README.MD">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="30">
-            <caret line="2" column="118" selection-start-line="2" selection-start-column="118" selection-end-line="2" selection-end-column="118" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-      <provider editor-type-id="MarkdownFxPreviewEditor">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/tools/README.MD" />
     <entry file="file://$PROJECT_DIR$/DAGAPI/README.MD">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
@@ -718,16 +651,7 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dask/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="30" column="14" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
-          <folding>
-            <element signature="e#47#60#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/dask/test.py" />
     <entry file="file://$PROJECT_DIR$/DAGAPI/BeihangDemo/a.sh" />
     <entry file="file://$PROJECT_DIR$/DAGAPI/testpath/usecase.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -761,21 +685,8 @@
     <entry file="file://$PROJECT_DIR$/DAGAPI/BeihangDemo/data" />
     <entry file="file://$PROJECT_DIR$/DAGAPI/BeihangDemo/loopfile" />
     <entry file="file://$PROJECT_DIR$/DAGAPI/BeihangDemo/function.sh" />
-    <entry file="file://$PROJECT_DIR$/tools/dag_makefile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="89" column="4" selection-start-line="89" selection-start-column="4" selection-end-line="89" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DAGAPI/BeihangDemo/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="3" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/tools/dag_makefile.py" />
+    <entry file="file://$PROJECT_DIR$/DAGAPI/BeihangDemo/test.py" />
     <entry file="file://$PROJECT_DIR$/DAGAPI/BeihangDemo/compute" />
     <entry file="file://$PROJECT_DIR$/DAGAPI/Job.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -784,13 +695,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DAGAPI/BeihangDemo/task_template/function.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/DAGAPI/BeihangDemo/task_template/function.sh" />
     <entry file="file://$PROJECT_DIR$/DAGAPI/BeihangDemo/task_template/pre.sh" />
     <entry file="file://$PROJECT_DIR$/DAGAPI/Dag.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -799,13 +704,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DAGAPI/BeihangDemo/DAGAPI/Edge.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/DAGAPI/BeihangDemo/DAGAPI/Edge.py" />
     <entry file="file://$PROJECT_DIR$/DAGAPI/Script.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
@@ -829,166 +728,67 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../TensorflowTutorialsCode/official start/tutorial_1.py" />
-    <entry file="file://$PROJECT_DIR$/DAGAPI/ModifyNode.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="26" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DAGAPI/ExtractMacros.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="85" column="34" selection-start-line="85" selection-start-column="34" selection-end-line="85" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DAGAPI/BeihangDemo/DAGAPI/Node.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dask/testdask.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="49" column="22" selection-start-line="49" selection-start-column="22" selection-end-line="49" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DAGAPI/BeihangDemo/task/buaa.dag">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DAGAPI/BeihangDemo/DAGAPI/Script.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DAGAPI/BeihangDemo/task/node_3.sub">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DAGAPI/BeihangDemo/task/node_2.sub">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DAGAPI/BeihangDemo/post.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DAGAPI/BeihangDemo/pre.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DAGAPI/BeihangDemo/DAGAPI/Job.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="25" column="31" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DAGAPI/BeihangDemo/DAGAPI/Dag.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1245">
-          <caret line="87" column="58" selection-start-line="87" selection-start-column="58" selection-end-line="87" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demofiles/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="23" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demofiles/t.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="5" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/DAGAPI/ModifyNode.py" />
+    <entry file="file://$PROJECT_DIR$/DAGAPI/ExtractMacros.py" />
+    <entry file="file://$PROJECT_DIR$/DAGAPI/BeihangDemo/DAGAPI/Node.py" />
+    <entry file="file://$PROJECT_DIR$/dask/testdask.py" />
+    <entry file="file://$PROJECT_DIR$/DAGAPI/BeihangDemo/task/buaa.dag" />
+    <entry file="file://$PROJECT_DIR$/DAGAPI/BeihangDemo/DAGAPI/Script.py" />
+    <entry file="file://$PROJECT_DIR$/DAGAPI/BeihangDemo/task/node_3.sub" />
+    <entry file="file://$PROJECT_DIR$/DAGAPI/BeihangDemo/task/node_2.sub" />
+    <entry file="file://$PROJECT_DIR$/DAGAPI/BeihangDemo/post.py" />
+    <entry file="file://$PROJECT_DIR$/DAGAPI/BeihangDemo/pre.py" />
+    <entry file="file://$PROJECT_DIR$/DAGAPI/BeihangDemo/DAGAPI/Job.py" />
+    <entry file="file://$PROJECT_DIR$/DAGAPI/BeihangDemo/DAGAPI/Dag.py" />
+    <entry file="file://$PROJECT_DIR$/demofiles/test.py" />
+    <entry file="file://$PROJECT_DIR$/demofiles/t.py" />
+    <entry file="file://$PROJECT_DIR$/DAGAPI/BeihangDemo/task/node_1.sub" />
+    <entry file="file://$PROJECT_DIR$/DAGAPI/BeihangDemo/task/pre.py" />
+    <entry file="file://$PROJECT_DIR$/DAGAPI/BeihangDemo/task_template/pre.py" />
+    <entry file="file://$PROJECT_DIR$/DAGAPI/BeihangDemo/DAGAPI/ExtractMacros.py" />
+    <entry file="file://$PROJECT_DIR$/DAGAPI/BeihangDemo/task_template/post.py" />
+    <entry file="file://$PROJECT_DIR$/DAGAPI/BeihangDemo/usecase.py" />
     <entry file="file://$PROJECT_DIR$/Utilities.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2595">
-          <caret line="173" column="30" selection-start-line="173" selection-start-column="30" selection-end-line="173" selection-end-column="50" />
+        <state relative-caret-position="2220">
+          <caret line="154" column="24" selection-start-line="154" selection-start-column="24" selection-end-line="154" selection-end-column="24" />
           <folding>
             <element signature="e#157#172#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DAGAPI/BeihangDemo/task/node_1.sub">
+    <entry file="file://$PROJECT_DIR$/BeihangDemo/task_template/post.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DAGAPI/BeihangDemo/task/pre.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DAGAPI/BeihangDemo/task_template/pre.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="21" column="55" selection-start-line="21" selection-start-column="55" selection-end-line="21" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DAGAPI/BeihangDemo/DAGAPI/ExtractMacros.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-54">
-          <caret line="101" column="46" selection-start-line="101" selection-start-column="46" selection-end-line="101" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DAGAPI/BeihangDemo/task_template/post.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="990">
-          <caret line="66" column="35" selection-start-line="66" selection-start-column="35" selection-end-line="66" selection-end-column="35" />
+        <state relative-caret-position="210">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding>
             <element signature="e#93#103#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DAGAPI/BeihangDemo/usecase.py">
+    <entry file="file://$PROJECT_DIR$/BeihangDemo/DAGAPI/ModifyNode.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="45" column="14" selection-start-line="45" selection-start-column="14" selection-end-line="45" selection-end-column="14" />
+        <state relative-caret-position="1122">
+          <caret line="79" column="44" selection-start-line="79" selection-start-column="44" selection-end-line="79" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BeihangDemo/task_template/pre.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="24" column="35" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
+          <folding>
+            <element signature="e#91#101#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BeihangDemo/usecase.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
